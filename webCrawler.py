@@ -35,6 +35,7 @@ if __name__ == "__main__":
     text_nodes = [text_node.strip() for text_node in text_nodes if text_node.strip() != ""]
 
     # Web crawler
+    # Download model from > https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin
     lid = LanguageIdentifier(model_path="lid.176.bin") 
     print(lid.predict("Hallo zusammen")) #Example
 
